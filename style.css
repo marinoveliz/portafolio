@@ -447,8 +447,10 @@ header > .container {
     grid-template-columns: repeat(2, 48%);
     justify-content: space-between;
     align-items: center;
+    grid-auto-rows: 14rem;
   }
   .services .section-title {
+    margin-top: 0;
     grid-column: span 2;
   }
 }
@@ -488,6 +490,10 @@ header > .container {
 
   .footer {
     margin-bottom: 0;
+  }
+
+  .footer small {
+    font-size: 1rem;
   }
   .header {
     position: sticky;
