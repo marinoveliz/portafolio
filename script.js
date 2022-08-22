@@ -53,7 +53,10 @@
       });
   });
 })(document);
+
+/************** * Scroll Top **********************/
 ((d) => {
+  const w = window;
   const $btnScroll = d.querySelector(".btn-scroll-top");
   w.addEventListener("scroll", (e) => {
     // detectra a que distancia se ha separado la barra  scrool
@@ -72,6 +75,8 @@
     }
   });
 })(document);
+
+/**************Scroll Spy***********/
 ((d) => {
   //  declaramos el elementos al que queremos asiganarle el observador
   const $sections = d.querySelectorAll("section[data-scroll-spy]");
