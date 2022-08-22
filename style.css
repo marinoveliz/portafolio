@@ -584,4 +584,8 @@ header>.container {
   .btn-scroll-top {
     bottom: 1vh;
   }
+
+  .scroll-spy-active[data-scroll-spy] {
+    color: var(--white-color)
+  }
 }
