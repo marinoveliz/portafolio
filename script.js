@@ -53,3 +53,22 @@
       });
   });
 })(document);
+((d) => {
+  const $btnScroll = d.querySelector(".btn-scroll-top");
+  w.addEventListener("scroll", (e) => {
+    // detectra a que distancia se ha separado la barra  scrool
+    let scrollTop = w.pageYOffset || d.documentElement.scrollTop;
+    if (scrollTop > 700) {
+      $btnScroll.classList.remove("hidden");
+    } else {
+      $btnScroll.classList.add("hidden");
+    }
+  });
+
+  d.addEventListener("click", (e) => {
+    console.log(e.target);
+    if (e.target.matches(".btn-scroll-top")) {
+      w.scrollTo({ behavior: "smooth", top: 0 });
+    }
+  });
+})(document);
